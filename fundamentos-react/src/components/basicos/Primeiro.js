@@ -1,3 +1,11 @@
 export default function Primeiro(){
-    return 'Primeiro componente'
+
+    const msg = 'Olá, seja bem-vindo!'
+
+    return (
+        <div>
+            <h2>Primeiro componente</h2>
+            <p>{ msg }</p>
+        </div>
+    )
 }
