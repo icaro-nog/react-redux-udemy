@@ -3,6 +3,7 @@ import './index.css'
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro';
 import Fragmento from './components/basicos/Fragmento';
+import NumeroAleatorio from './components/basicos/NumeroAleatorio';
 
 export function App(props) {
     return (
@@ -10,6 +11,10 @@ export function App(props) {
             <h1>Fundamentos React</h1>
             Olá josnelllllll
             <br></br>
+            <NumeroAleatorio
+                min={10}
+                max={20}
+            ></NumeroAleatorio>
             <Fragmento></Fragmento>
             <ComParametro
                 situacao='situacao do aluno'
