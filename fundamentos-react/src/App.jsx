@@ -7,6 +7,7 @@ import NumeroAleatorio from './components/basicos/NumeroAleatorio';
 import Card from './components/layout/Card';
 import './App.css'
 import Familia from './components/basicos/Familia';
+import FamiliaMembro from './components/basicos/FamiliaMembro';
 
 export function App(props) {
     return (
@@ -23,7 +24,17 @@ export function App(props) {
                 >
                     <Familia 
                         sobrenome='Ferreira'
-                    ></Familia>
+                    >
+                        <FamiliaMembro 
+                            nome='Pedro'
+                        ></FamiliaMembro>
+                        <FamiliaMembro
+                            nome='Ana'
+                        ></FamiliaMembro>
+                        <FamiliaMembro
+                            nome='Juca'
+                        ></FamiliaMembro>
+                    </Familia>
                 </Card>
 
                 <Card 
