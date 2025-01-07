@@ -17,7 +17,7 @@ export function App(props) {
             <div className='Cards'>
                 <Card 
                     titulo='#04 - Desafio aleatório'
-                    color='#080'
+                    color='#ff5733'
                 >
                     <NumeroAleatorio
                         min={10}
@@ -27,12 +27,14 @@ export function App(props) {
 
                 <Card 
                     titulo='#03 - Fragmento'
+                    color='#311b92'
                 >
                     <Fragmento></Fragmento>
                 </Card>
 
                 <Card 
                     titulo='#02 - Parametro'
+                    color='#f50057'
                 >
                     <ComParametro
                         situacao='situacao do aluno'
@@ -43,6 +45,7 @@ export function App(props) {
 
                 <Card 
                     titulo='#01 - Primeiro componente'
+                    color='#ffcdd2'
                 >
                     <Primeiro></Primeiro>
                 </Card>
