@@ -6,6 +6,7 @@ import Fragmento from './components/basicos/Fragmento';
 import NumeroAleatorio from './components/basicos/NumeroAleatorio';
 import Card from './components/layout/Card';
 import './App.css'
+import Familia from './components/basicos/Familia';
 
 export function App(props) {
     return (
@@ -15,6 +16,16 @@ export function App(props) {
             <br></br>
 
             <div className='Cards'>
+
+                <Card 
+                    titulo='#05 - Componente com Filhos'
+                    color='#ffcdd2'
+                >
+                    <Familia 
+                        sobrenome='Ferreira'
+                    ></Familia>
+                </Card>
+
                 <Card 
                     titulo='#04 - Desafio aleatório'
                     color='#ff5733'
