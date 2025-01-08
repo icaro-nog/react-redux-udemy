@@ -10,6 +10,7 @@ import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
+import ParOuImpar from './components/condicional/ParOuImpar';
 
 export function App(props) {
     return (
@@ -19,6 +20,15 @@ export function App(props) {
             <br></br>
 
             <div className='Cards'>
+
+                <Card
+                    titulo='#08 - Renderização Condicional'
+                    color='#ff5733'
+                >
+                    <ParOuImpar
+                        numero={21}
+                    ></ParOuImpar>
+                </Card>
 
                 <Card
                     titulo='#07 - Tabela produtos'
