@@ -9,6 +9,7 @@ import './App.css'
 import Familia from './components/basicos/Familia';
 import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
+import TabelaProdutos from './components/repeticao/TabelaProdutos';
 
 export function App(props) {
     return (
@@ -18,6 +19,13 @@ export function App(props) {
             <br></br>
 
             <div className='Cards'>
+
+                <Card
+                    titulo='#07 - Tabela produtos'
+                    color='#311b92'
+                >
+                    <TabelaProdutos></TabelaProdutos>
+                </Card>
 
                 <Card
                     titulo='#06 - Repetição'
