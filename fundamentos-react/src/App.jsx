@@ -11,6 +11,7 @@ import FamiliaMembro from './components/basicos/FamiliaMembro';
 import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
+import UsuarioInfo from './components/condicional/UsuarioInfo';
 
 export function App(props) {
     return (
@@ -28,6 +29,12 @@ export function App(props) {
                     <ParOuImpar
                         numero={21}
                     ></ParOuImpar>
+                    <UsuarioInfo
+                        usuario={{ teste: 'Ícaro' }}
+                    ></UsuarioInfo>
+                    <UsuarioInfo
+                        usuario={{}}
+                    ></UsuarioInfo>
                 </Card>
 
                 <Card
