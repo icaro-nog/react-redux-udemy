@@ -30,10 +30,7 @@ export function App(props) {
                         numero={21}
                     ></ParOuImpar>
                     <UsuarioInfo
-                        usuario={{ teste: 'Ícaro' }}
-                    ></UsuarioInfo>
-                    <UsuarioInfo
-                        usuario={{}}
+                        usuario={{ nome: 'Ícaro' }}
                     ></UsuarioInfo>
                 </Card>
 

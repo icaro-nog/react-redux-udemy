@@ -7,11 +7,18 @@ export default function UsuarioInfo(props){
 
     return (
         <div>
-            <If test={usuario && usuario.nome} >
+            {/* <If test={usuario && usuario.nome} >
                 Seja bem vindo <strong> {props.usuario.nome} </strong>!
             </If>
             <If test={!usuario || !usuario.nome}>
                 Seja bem vindo <strong> sem nome </strong>!
+            </If> */}
+
+            <If test={usuario && usuario.nome} >
+                Seja bem vindo <strong> {props.usuario.nome} </strong>!
+                <Else>
+                    Seja bem-vindo <strong>anônimo</strong>!
+                </Else>
             </If>
         </div>
     )
