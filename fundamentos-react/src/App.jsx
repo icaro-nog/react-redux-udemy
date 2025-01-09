@@ -12,6 +12,7 @@ import ListaAlunos from './components/repeticao/ListaAlunos';
 import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
+import DiretaPai from './components/comunicacao/DiretaPai';
 
 export function App(props) {
     return (
@@ -21,6 +22,13 @@ export function App(props) {
             <br></br>
 
             <div className='Cards'>
+
+                <Card
+                    titulo='#09 - Comunicação direta'
+                    color='#ffcdd2'
+                >
+                    <DiretaPai></DiretaPai>
+                </Card>
 
                 <Card
                     titulo='#08 - Renderização Condicional'
