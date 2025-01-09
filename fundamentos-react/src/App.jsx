@@ -13,6 +13,7 @@ import TabelaProdutos from './components/repeticao/TabelaProdutos';
 import ParOuImpar from './components/condicional/ParOuImpar';
 import UsuarioInfo from './components/condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
+import IndiretaPai from './components/comunicacao/IndiretaPai';
 
 export function App(props) {
     return (
@@ -22,6 +23,13 @@ export function App(props) {
             <br></br>
 
             <div className='Cards'>
+
+                <Card
+                    titulo='#09 - Comunicação indireta'
+                    color='#f50057'
+                >
+                    <IndiretaPai></IndiretaPai>
+                </Card>
 
                 <Card
                     titulo='#09 - Comunicação direta'
