@@ -15,6 +15,7 @@ import UsuarioInfo from './components/condicional/UsuarioInfo';
 import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
+import Contador from './components/contador/Contador';
 
 export function App(props) {
     return (
@@ -24,6 +25,15 @@ export function App(props) {
             <br></br>
 
             <div className='Cards'>
+
+                <Card
+                    titulo='#12 - Contador'
+                    color='#ff5733'
+                >
+                    <Contador
+                        numeroInicial={10}
+                    ></Contador>
+                </Card>
 
                 <Card
                     titulo='#11 - Input'
