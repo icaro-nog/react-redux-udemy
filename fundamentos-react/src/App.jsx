@@ -16,6 +16,7 @@ import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
 import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 
 export function App(props) {
     return (
@@ -25,6 +26,13 @@ export function App(props) {
             <br></br>
 
             <div className='Cards'>
+
+                <Card
+                    titulo='#13 - Desafio mega-sena'
+                    color='#ffcdd2'
+                >
+                    <Mega></Mega>
+                </Card>
 
                 <Card
                     titulo='#12 - Contador'
