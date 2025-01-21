@@ -19,6 +19,7 @@ const Content = props => (
       <Route 
         path="/" 
         element={<Home />} 
+        exact
       />
     </Routes>
   </main>
