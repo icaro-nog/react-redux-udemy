@@ -3,21 +3,10 @@ import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle'
 
 const merge = (v1, v2) => {
-    return v1 + v2;
-
-    // const mergedValue = '';
-    // const 
-
-    // // var testVariable = 10;
-    // // var oldVar = testVariable;
-
-    // // ...
-    // // if (oldVar != testVariable)
-    // // alert("testVariable has changed!");
-
-    // if(){
-
-    // }
+   
+    return [...v1].map(function(e, i){
+        return `${e}${v2[i] || ""}`
+    }).join("")
 
 }
 
