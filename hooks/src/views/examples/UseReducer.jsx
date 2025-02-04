@@ -5,7 +5,8 @@ const initialState = {
     cart: [],
     products: [],
     user: null,
-    number: 0
+    number: 0,
+    productNumber: 10
 }
 
 function reducer(state, action) {
@@ -14,6 +15,12 @@ function reducer(state, action) {
             return {...state, number: state.number + 2}
         case 'login':
             return {...state, user: { name: action.payload } }
+        case 'multiplicaDivide':
+            return {...state, productNumber: state.productNumber * 7 / 25}
+        case 'tonarInteiro':
+            return {...state, productNumber: parseInt(state.productNumber)}
+        case 'passarN':
+            return {...state, productNumber: state.productNumber + action.payload}
         default:
             return state
     }
@@ -46,6 +53,26 @@ const UseReducer = (props) => {
                         className="btn"
                         onClick={() => dispatch({type: 'numberAdd2'})}
                     >+2</button>
+                </div>
+            </div>
+
+            <div className="center">
+                <span className="text">
+                    {state.productNumber}
+                </span>
+                <div>
+                    <button 
+                        className="btn"
+                        onClick={() => dispatch({ type: 'multiplicaDivide' })}
+                    >Multiplicar e Dividir</button>
+                    <button 
+                        className="btn"
+                        onClick={() => dispatch({type: 'tonarInteiro' })}
+                    >Tornar inteiro</button>
+                    <button 
+                        className="btn"
+                        onClick={() => dispatch({type: 'passarN', payload: 25 })}
+                    >Somar número</button>
                 </div>
             </div>
         </div>
