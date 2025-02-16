@@ -34,6 +34,12 @@ export default function Inicio(){
                 cor="green"
             >
             </Navegador>
+            <Navegador
+                texto="Navegação #02"
+                destino="/cliente/sp-2/123"
+                cor="blue"
+            >
+            </Navegador>
         </div>
     )
 }
