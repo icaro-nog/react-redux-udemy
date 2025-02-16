@@ -40,6 +40,12 @@ export default function Inicio(){
                 cor="blue"
             >
             </Navegador>
+            <Navegador
+                texto="Componente com Estado"
+                destino="/estado"
+                cor="black"
+            >
+            </Navegador>
         </div>
     )
 }
