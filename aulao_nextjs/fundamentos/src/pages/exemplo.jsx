@@ -1,10 +1,11 @@
 import Cabecalho from "../components/Cabecalho";
+import Layout from "../components/Layout";
 
 export default function Exemplo(){
     return (
-        <div>
+        <Layout titulo="Usando componentes">
             <Cabecalho titulo="cabecalho 1" ></Cabecalho>
             <Cabecalho titulo="cabecalho 2" ></Cabecalho>
-        </div>
+        </Layout>
     )
 }
