@@ -46,6 +46,12 @@ export default function Inicio(){
                 cor="black"
             >
             </Navegador>
+            <Navegador
+                texto="Integração com API #01"
+                destino="/integracao_1"
+                cor="yellow"
+            >
+            </Navegador>
         </div>
     )
 }
