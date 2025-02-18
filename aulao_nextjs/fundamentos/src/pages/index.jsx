@@ -52,6 +52,11 @@ export default function Inicio(){
                 cor="yellow"
             >
             </Navegador>
+            <Navegador
+                texto="Conteúdo Estático"
+                destino="/estatico"
+                cor="pink"
+            ></Navegador>
         </div>
     )
 }
